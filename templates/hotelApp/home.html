@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="{% static 'css/order.css' %}">
+    <link rel="icon" type="image" href="{% static 'images/logo.png' %}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo"><a href="{% url 'home' %}">Foodies</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'menu' %}">Menu</a></li>
+                    <li><a href="{% url 'order' %}">Order</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome Foodies!</h2>
+            <p>Your one-stop destination for delicious food. Order online and enjoy at the comfort of your family!</p>
+            <a href="{% url 'menu' %}" class="btn">View Menu</a>
+        </div>
+    </section>
+
+</body>
+</html>

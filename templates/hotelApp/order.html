@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="{% static 'css/order.css' %}">
+    <link rel="icon" type="image" href="{% static 'images/logo.png' %}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo"><a href="{% url 'home' %}">Foodies</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'menu' %}">Menu</a></li>
+                    <li><a href="{% url 'order' %}">Order</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Table Section -->
+    <section id="cartItemsContainer">
+        <h3>Your Cart</h3>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="orderItemsBody">
+                <!-- JavaScript -->
+            </tbody>
+        </table>
+        <div id="cartTotal">
+            <h3>Total Price: Rs. <span id="totalPrice">0.00</span></h3>
+        </div>
+        <button id="submitOrder" class="btn-submit">Submit Order</button>
+    </section>
+
+    <script src="{% static 'js/order.js' %}"></script>
+    
+</body>
+</html>

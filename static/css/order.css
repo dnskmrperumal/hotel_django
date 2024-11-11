@@ -1,0 +1,166 @@
+/* default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff6347;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #ff4500; 
+    border-radius: 4px;
+}
+
+/* Order Table Section */
+#cartItemsContainer {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table Styling */
+#orderTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#orderTable th, #orderTable td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#orderTable th {
+    background-color: #ff6347; 
+    color: #fff;
+    font-weight: bold;
+}
+
+#orderTable td {
+    background-color: #f9f9f9;
+}
+
+/* Quantity and Action Buttons */
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+    background-color: #ff4500;
+}
+
+#cartTotal {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#totalPrice {
+    color: #ff6347; 
+}
+
+/* Submit Button */
+#submitOrder {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6347; 
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+#submitOrder:hover {
+    background-color: #ff4500; 
+}
+
+.quantity-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #ff4500;
+}
+
+.remove-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #ff4500;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="icon" type="image" href="{% static 'images/logo.png' %}">
+</head>
+<body>
+        <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo"><a href="{% url 'home' %}">Foodies</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'menu' %}">Menu</a></li>
+                    <li><a href="{% url 'order' %}">Order</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-container">
+
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="{% static 'images/indian-food-dosa-X2.jpg' %}" alt="Dosa">
+            <div class="item-details">
+                <h2>Dosa</h2>
+                <p class="price">Rs.199.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="{% static 'images/Poha-Idli.webp' %}" alt="Idli">
+            <div class="item-details">
+                <h2>Idli</h2>
+                <p class="price">Rs.99.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="{%static 'images/curd-vada.jpg' %}" alt="curd-vada">
+            <div class="item-details">
+                <h2>Curd-Vada</h2>
+                <p class="price">Rs.499.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+            <img src="{%static 'images/pongal.jpg' %}" alt="pongal">
+            <div class="item-details">
+                <h2>Pongal</h2>
+                <p class="price">Rs.599.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 5 -->
+        <div class="menu-item">
+            <img src="{%static 'images/poori.jpg' %}" alt="poori">
+            <div class="item-details">
+                <h2>Poori</h2>
+                <p class="price">Rs.49.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 6 -->
+        <div class="menu-item">
+            <img src="{%static 'images/poori.jpg' %}" alt="Chicken-65">
+            <div class="item-details">
+                <h2>Chicken-65</h2>
+                <p class="price">Rs.999.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 7 -->
+        <div class="menu-item">
+            <img src="{% static 'images/curd-vada.jpg' %}" alt="Lolipop">
+            <div class="item-details">
+                <h2>chicken-lolipop</h2>
+                <p class="price">Rs.159.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 8 -->
+        <div class="menu-item">
+            <img src="{% static 'images/pongal.jpg' %}" alt="Chilly-Chicken">
+            <div class="item-details">
+                <h2>Chilly-Chicken</h2>
+                <p class="price">Rs.949.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 9 -->
+        <div class="menu-item">
+            <img src="{%static 'images/Cheeseburger.jpeg' %}" alt="Burger">
+            <div class="item-details">
+                <h2>Cheeseburger</h2>
+                <p class="price">Rs.299.00</p>
+            </div>
+        </div>
+
+        <!-- Menu Item 10 -->
+        <div class="menu-item">
+            <img src="{%static 'images/indian-food-dosa-X2.jpg' %}" alt="Pizza">
+            <div class="item-details">
+                <h2>Margherita_Pizza</h2>
+                <p class="price">Rs.199.00</p>
+            </div>
+        </div>
+
+         <!-- Add to Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-item-name"></h2>
+            <p class="price" id="modal-item-price"></p>
+            <div class="quantity-control">
+                <button id="decreaseQuantity">-</button>
+                <input type="number" id="itemQuantity" value="1" min="1" readonly>
+                <button id="increaseQuantity">+</button>
+            </div>
+            <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="{% static 'js/menu.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order System</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo"><a href="{% url 'home' %}">Foodies</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'menu' %}">Menu</a></li>
+                    <li><a href="{% url 'order' %}">Order</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Shop Address -->
+        <div class="hero-text">
+            <h2>Shop Address</h2>
+            <p>Trichy, Tamil Nadu<br>India</p>
+        </div>
+
+        <!-- Shop Hours -->
+        <div class="hero-text">
+            <h2>Shop Hours</h2>
+            <p>MON - FRIDAY: 8 to 9 PM<br>SAT - SUN: 10 to 8 PM</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="hero-text">
+            <h2>Contact</h2>
+            <p>Phone : 9876543210<br>Email : oasyscybernetics.com</p>
+        </div>
+    </section>
+
+</body>
+</html>
