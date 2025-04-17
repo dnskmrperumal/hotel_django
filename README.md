@@ -19,8 +19,8 @@ Follow the steps below to set up this project on your local machine.
 - virtualenv (recommended)
 ### Installation
 1. Clone the repository
-$ git clone https://github.com//hotel-management-django.git
-$ cd hotel-management-django
+$ git clone https://github.com/dnskmrperumal/hotel_django.git
+$ cd hotel_django
 2. Create and activate virtual environment
 $ python -m venv env
 $ source env/bin/activate # On Windows: env\Scripts\activate
